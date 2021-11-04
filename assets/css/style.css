@@ -1,0 +1,270 @@
+/** Up to 767px **/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+html{
+    overflow-x: hidden;
+    font-family:'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 22px;
+    weight: 500;
+}
+
+h2{
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+body{
+    max-width: 767px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 70%;
+    height: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.localisationArriere{
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+#locationIcon{
+    color: black;
+}
+
+.localisation{
+    display: flex;
+    margin: auto;
+    padding: 10px 10px;
+    padding: 0;
+}
+
+#localisationTexte{
+    padding-left: 16px;
+}
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+    padding-top: 36px;
+}
+
+#textTitre{
+    color: rgb(95, 95, 95);
+}
+
+#titre1{
+    width: 75%;
+    margin: auto;
+}
+
+.explorezBouton{
+    width: 60%;
+    margin: auto;
+    align-content: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    height: 52px;
+    cursor: pointer;
+    color:white;
+    background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.fonctionnement{
+    padding-bottom: 72px;
+    margin: auto;
+}
+
+#titreSection1{
+    margin-left: 18px;
+}
+
+#titreSection2{
+    margin-left: 8px;
+}
+
+.fonctionnementEncarts{
+    display: flex;
+    margin: auto;
+    align-content: center;
+    border: 2px solid transparent;
+    width: 85%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.18), -2px 2px 3px rgba(0, 0, 0, 0.18);
+    border-radius: 14px;
+    margin-bottom: 16px;
+}
+
+#fonctionnementTexteIcone1, #fonctionnementTexteIcone2, #fonctionnementTexteIcone3{
+    position: relative;
+}
+
+.number{
+    position: absolute;
+    left: -45px;
+    color: white;
+    background-color: #9356DC;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    font-size: 13px;
+}
+
+.fas {
+    color: rgb(136, 136, 136);
+}
+
+.fonctionnementTexteIcone{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.fonctionnementTexte{
+    margin-left: 32px;
+}
+
+.fonctionnementEtapeDiv{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurantsEncart{
+    border: solid #f2f2f2d3 1px;
+    border-radius: 16px;
+    border-top: transparent;
+    display:inline-block;
+    box-shadow:  0px 5px 15px 1px #0000002e;
+    width: 93%;
+    margin: auto;
+    height: 100%;
+    margin-bottom: 24px;
+}
+
+.restaurantsEncartImage{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow:  0px 15px 10px -15px #0000002e;
+    height: 180px;
+}
+
+.imageRestaurant{
+    height: 50%;
+}
+
+#restaurantsEncart1, #restaurantsEncart2{
+    position: relative;
+}
+
+.nouveau{
+    position: absolute;
+    background-color: #99e2d0;
+    color:#008766;
+    border-radius: 2px;
+    padding: 10px;
+    top: 8px;
+    right: 16px;
+}
+
+.sousEncart{
+    display: flex;
+    flex-wrap: wrap;
+    height: 20%;
+    margin-bottom: 8px;
+    margin-top: 4px;
+}
+
+.textEncart{
+    flex: 1;
+}
+
+.localisationEncart{
+    margin: 8px 0 6px 12px;
+}
+
+.nomRestaurant{
+    margin: 8px 0 6px 12px;
+}
+
+#coeur1, #coeur2, #coeur3, #coeur4{
+    font-size: 23px;
+    align-content: center;
+    margin: auto;
+    margin-right: 20px;
+}
+
+.restaurants{
+    width:93%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    margin: auto;
+    color: white;
+}
+
+#logoOhMyFoodfooter{
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+#footerMenu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 36px;
+    padding-bottom: 28px;
+}
+
+#footerMenu h3{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#iconeCouvert{
+    padding-right: 10px;
+}
+
+#iconePartenaire{
+    padding-right: 6px;
+}

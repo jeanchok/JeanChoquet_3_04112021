@@ -1,0 +1,177 @@
+/** Up to 767px **/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+html{
+    overflow-x: hidden;
+    font-family:'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    weight: 500;
+}
+
+h2{
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    margin: auto;
+}
+
+body{
+    max-width: 767px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.retourner{
+    border: transparent;
+    background-color: transparent;
+}
+
+#fleche{
+    font-size: 16px;
+    margin-left: 13px;
+}
+
+.logo{
+    width: 70%;
+    height: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    margin-right: auto;
+}
+
+.restaurantsEncartImage{
+    width: 100%;
+    object-fit: cover;
+    box-shadow:  0px 15px 10px -15px #0000002e;
+    height: 180px;
+}
+
+.titreMenuAlafrancaise{
+    display: flex;
+    margin-left:14px;
+}
+
+#coeur{
+    font-size: 23px;
+    align-content: center;
+    margin: auto;
+    margin-right: 24px;
+}
+
+.menuSection{
+    margin:auto;
+}
+
+.titreSection{
+    margin-left:14px;
+}
+
+.titreSection:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 41px;
+    background-color:#99E2D0;
+}
+
+.plat{
+    display: flex;
+    margin: auto;
+    width: 93%;
+    flex-direction: column;
+    align-content: center;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.18), -2px 2px 3px rgba(0, 0, 0, 0.18);
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.nomPlat{
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.sousTexte{
+    display: flex;
+    margin-top: -10px;
+    margin-bottom: -3px;
+    margin-left: 12px;
+}
+
+.prix{
+    margin-right: 22px;
+}
+
+.ingredients{
+    flex: 1;
+}
+
+.bouton{
+    margin:auto;
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 68px;
+}
+
+.commander{
+    width: 60%;
+    margin: auto;
+    align-content: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 32px;
+    margin-bottom: 16px;
+    height: 52px;
+    cursor: pointer;
+    color:white;
+    background: linear-gradient(#FF79DA, #9356DC);
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    margin: auto;
+    color: white;
+}
+
+#logoOhMyFoodfooter{
+    color: white;
+    font-family: 'Shrikhand', cursive;
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+#footerMenu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 36px;
+    padding-bottom: 28px;
+}
+
+#footerMenu h3{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#iconeCouvert{
+    padding-right: 10px;
+}
+
+#iconePartenaire{
+    padding-right: 6px;
+}
