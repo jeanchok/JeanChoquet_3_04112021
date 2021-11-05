@@ -1,11 +1,19 @@
 {
   "name": "jeanchoquet_3_28102021",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch ./sass/main.scss:./public/css/style3.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "JeanC",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanchok/JeanChoquet_3_04112021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeanchok/JeanChoquet_3_04112021/issues"
+  },
+  "homepage": "https://github.com/jeanchok/JeanChoquet_3_04112021#readme",
+  "description": ""
 }

@@ -1,0 +1,18 @@
+.bouton{
+    margin:auto;
+    display: flex;
+    margin-top: 48px;
+    margin-bottom: 68px;
+        &__texte{
+            width: 60%;
+            margin: auto;
+            align-content: center;
+            border: 2px solid #F2F2F2;
+            border-radius: 32px;
+            margin-bottom: 16px;
+            height: 52px;
+            cursor: pointer;
+            color:white;
+            background: linear-gradient(#FF79DA, #9356DC);
+        }
+}

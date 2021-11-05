@@ -1,0 +1,33 @@
+footer{
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    margin: auto;
+    color: white;
+    .footer__menu{
+        display: flex;
+        flex-direction: column;
+        margin-left: 36px;
+        padding-bottom: 28px;
+        &__logo{
+            color: white;
+            font-family: 'Shrikhand', cursive;
+            font-size: 15px;
+            padding-top: 8px;
+        }
+        &__texte{
+            margin-top: 4px;
+            margin-bottom: 4px;
+            font-size: 13px;
+            font-weight: 400;
+        
+        }
+        
+    }
+}
+
+#footer__iconeCouvert{
+    padding-right: 10px;
+}
+#footer__iconePartenaire{
+    padding-right: 6px;
+}

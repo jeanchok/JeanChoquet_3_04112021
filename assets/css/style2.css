@@ -88,7 +88,47 @@ a{
     background-color:#99E2D0;
 }
 
+@keyframes slideInFromTop {
+    from{
+		opacity: 0;
+		transform: translateY(15px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+#plat1{
+    animation-delay: 0.3s;
+}
+#plat2{
+    animation-delay: 0.4s;
+}
+#plat3{
+    animation-delay: 0.5s;
+}
+#plat4{
+    animation-delay: 0.6s;
+}
+#plat5{
+    animation-delay: 0.7s;
+}
+#plat6{
+    animation-delay: 0.8s;
+}
+#plat7{
+    animation-delay: 0.9s;
+}
+#plat8{
+    animation-delay: 1s;
+}
+#plat9{
+    animation-delay: 1.1s;
+}
+
 .plat{
+    animation: 1s ease-in-out 2s 1 slideInFromTop;
     display: flex;
     margin: auto;
     width: 93%;
@@ -118,6 +158,20 @@ a{
 
 .ingredients{
     flex: 1;
+}
+
+.sousTexte--hover{
+    position: absolute;
+    background-color: #99E2D0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 65px;
+    transform-origin: right 50%;
+    border-radius: 0px 20px 20px 0px;
+    transform: translateX(65px);
+    overflow: hidden;
+    transition-duration: 0.5s;
 }
 
 .bouton{

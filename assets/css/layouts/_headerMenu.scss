@@ -1,0 +1,20 @@
+.header{
+    display: flex;
+    margin: auto;
+    &__back{
+        border: transparent;
+        background-color: transparent;
+        #fleche{
+            font-size: 16px;
+            margin-left: 13px;
+        }
+    }
+    &__logo{
+        width: 70%;
+        height: 28px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 18px;
+        margin-right: auto;
+    }
+}
