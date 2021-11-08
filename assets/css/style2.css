@@ -139,6 +139,7 @@ a{
     border-radius: 16px;
     margin-bottom: 16px;
     position: relative;
+    overflow: hidden;
 }
 
 .nomPlat{
@@ -183,11 +184,11 @@ a{
     transition:0.5s;
     pointer-events: none;
     border-radius: 0px 20px 20px 0px;
-    overflow: hidden;
+    
 }
 
 .plat:hover:before{
-    right:-50%;
+    right:-85%;
 }
   
 
@@ -211,13 +212,16 @@ a{
     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     width: 65px;
 }
-
+*/
+#checkCircle{
+    align-items: center;
+}
 .plat:hover #checkCircle{
-    animation: mymove 0.5s;
+    animation: mymove 1s;
 }
 @keyframes mymove {
-    50% {transform: rotate(360deg);}
-  }*/
+    100% {transform: rotate(360deg);}
+}
 
 .bouton{
     margin:auto;
