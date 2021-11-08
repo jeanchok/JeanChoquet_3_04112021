@@ -1,19 +1,24 @@
 {
-  "name": "jeanchoquet_3_28102021",
+  "name": "writte-sass",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
-  },
-  "author": "JeanC",
-  "license": "ISC",
+      "sass": "sass --watch ./sass/main.scss:.public/css/style.css",
+      "sassProd": "sass ./sass/main.scss:./css/style.css --style compressed",
+      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeanchok/JeanChoquet_3_04112021.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeanchok/JeanChoquet_3_04112021/issues"
   },
   "homepage": "https://github.com/jeanchok/JeanChoquet_3_04112021#readme",
-  "description": ""
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
 }
