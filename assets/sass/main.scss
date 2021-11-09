@@ -1,4 +1,7 @@
-@import "./utils/variables";
-@import ".components/_button.scss";
-@import ".layouts/_footer.scss";
-@import ".layouts/_headerMenu.scss";
+@import "./utils/_index.scss";
+@import "./components/_index.scss";
+@import "./layouts/_index.scss";
+@import "./base/_index.scss";
+@import "./pages/_index.scss";
+@import "./themes/_index.scss";
+@import "./vendors/_index.scss";
