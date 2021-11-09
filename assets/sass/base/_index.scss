@@ -1,0 +1,33 @@
+/** Up to 767px **/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+html{
+    overflow-x: hidden;
+    font-family:'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+header{
+    margin: auto;
+}
+
+body{
+    max-width: 767px;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

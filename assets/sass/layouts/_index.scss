@@ -19,6 +19,74 @@
     }
 }
 
+.headingSection{
+    position:relative;
+    &__image{
+        object-fit: cover;
+        box-shadow:  0px 15px 10px -15px #0000002e;
+        position: relative;
+        width: 100%;
+    }
+    &__title{
+        display: flex;
+        position: absolute;
+        justify-content: space-around;
+        width: 100%;
+        background-color: $white;
+        border-radius: 40px 40px 0 0;
+        bottom: 0;
+        #title__coeur{
+            font-size: 23px;
+            align-content: center;
+            margin: auto;
+            margin-right: 24px;
+        }
+    }
+
+}
+
+.menuSection{
+    margin:auto;
+    &__titre{
+        margin-left:14px;
+    }
+}
+
+.plat{
+    animation: 1s ease-in-out 2s 1 slideInFromTop;
+    display: flex;
+    margin: auto;
+    width: 93%;
+    flex-direction: column;
+    align-content: center;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.18), -2px 2px 3px rgba(0, 0, 0, 0.18);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    &__nom{
+        margin-left: 12px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    &__texte{
+        display: flex;
+        margin-top: 4px;
+        margin-bottom: 3px;
+        margin-left: 6px;
+        padding-bottom: 4px;
+    }
+    &__ingredients{
+            flex: 1;
+    }
+    &__prix{
+            margin-right: 22px;
+    }
+    
+    
+}
+
 footer{
     width: 100%;
     background-color: rgb(56, 56, 56);

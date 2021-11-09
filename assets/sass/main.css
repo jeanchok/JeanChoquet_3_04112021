@@ -1,17 +1,171 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import ".components/_button.scss";
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   assets\sass\main.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \".components/_button.scss\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   assets\\sass\\main.scss 2:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.bouton {
+  margin: auto;
+  display: flex;
+  margin-top: 48px;
+  margin-bottom: 68px;
 }
+.bouton__texte {
+  width: 60%;
+  margin: auto;
+  align-content: center;
+  border: 2px solid #F2F2F2;
+  border-radius: 32px;
+  margin-bottom: 16px;
+  height: 52px;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.header {
+  display: flex;
+  margin: auto;
+}
+.header__back {
+  border: transparent;
+  background-color: transparent;
+}
+.header__back #fleche {
+  font-size: 16px;
+  margin-left: 13px;
+}
+.header__logo {
+  width: 70%;
+  height: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  margin-right: auto;
+}
+
+.headingSection {
+  position: relative;
+}
+.headingSection__image {
+  object-fit: cover;
+  box-shadow: 0px 15px 10px -15px #0000002e;
+  position: relative;
+  width: 100%;
+}
+.headingSection__title {
+  display: flex;
+  position: absolute;
+  justify-content: space-around;
+  width: 100%;
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+}
+.headingSection__title #title__coeur {
+  font-size: 23px;
+  align-content: center;
+  margin: auto;
+  margin-right: 24px;
+}
+
+.menuSection {
+  margin: auto;
+}
+.menuSection__titre {
+  margin-left: 14px;
+}
+
+.plat {
+  animation: 1s ease-in-out 2s 1 slideInFromTop;
+  display: flex;
+  margin: auto;
+  width: 93%;
+  flex-direction: column;
+  align-content: center;
+  border: 2px solid transparent;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.18), -2px 2px 3px rgba(0, 0, 0, 0.18);
+  border-radius: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.plat__nom {
+  margin-left: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.plat__texte {
+  display: flex;
+  margin-top: 4px;
+  margin-bottom: 3px;
+  margin-left: 6px;
+  padding-bottom: 4px;
+}
+.plat__ingredients {
+  flex: 1;
+}
+.plat__prix {
+  margin-right: 22px;
+}
+
+footer {
+  width: 100%;
+  background-color: #383838;
+  margin: auto;
+  color: white;
+}
+footer .footer__menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+  padding-bottom: 28px;
+}
+footer .footer__menu__logo {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 15px;
+  padding-top: 8px;
+}
+footer .footer__menu__texte {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#footer__iconeCouvert {
+  padding-right: 10px;
+}
+
+#footer__iconePartenaire {
+  padding-right: 6px;
+}
+
+/** Up to 767px **/
+html {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+header {
+  margin: auto;
+}
+
+body {
+  max-width: 767px;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=main.css.map */
