@@ -4,10 +4,6 @@
     &__back{
         border: transparent;
         background-color: transparent;
-        #fleche{
-            font-size: 16px;
-            margin-left: 13px;
-        }
     }
     &__logo{
         width: 70%;
@@ -45,18 +41,72 @@
 
 }
 
+.title__restaurant{
+    margin-left: 14px;
+}
+
 .menuSection{
-    margin:auto;
+    margin-left: 12px;
+    margin-right: 12px;
     &__titre{
-        margin-left:14px;
+        &:after{
+            content: "";
+            display: block;
+            height: 2px;
+            width: 41px;
+            background-color:#99E2D0;
+        }
+    } 
+}
+
+@keyframes appearDelayed {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#appear-1,#appear-8,#appear-12{
+    -webkit-animation: appearDelayed;
+    animation-name: appearDelayed;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes slideInFromTop {
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+@for $i from 0 to 13 {
+    #appear-#{$i} {
+      animation-delay:  #{$i/10}s;
     }
 }
 
 .plat{
-    animation: 1s ease-in-out 2s 1 slideInFromTop;
+    -webkit-animation: slideInFromTop;
+    animation-name: slideInFromTop;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
     display: flex;
     margin: auto;
-    width: 93%;
+    width: 100%;
     flex-direction: column;
     align-content: center;
     border: 2px solid transparent;
@@ -72,10 +122,9 @@
     }
     &__texte{
         display: flex;
-        margin-top: 4px;
-        margin-bottom: 3px;
-        margin-left: 6px;
-        padding-bottom: 4px;
+        margin-top: -10px;
+        margin-bottom: -3px;
+        margin-left: 12px;
     }
     &__ingredients{
             flex: 1;
@@ -85,31 +134,32 @@
     }
 }
 
-footer{
+.footer{
     width: 100%;
-    background-color: rgb(56, 56, 56);
+    background-color: $grey;
     margin: auto;
-    color: white;
-    .footer__menu{
-        display: flex;
-        flex-direction: column;
-        margin-left: 36px;
-        padding-bottom: 28px;
-        &__logo{
-            color: white;
-            font-family: 'Shrikhand', cursive;
-            font-size: 15px;
-            padding-top: 8px;
-        }
-        &__texte{
-            margin-top: 4px;
-            margin-bottom: 4px;
-            font-size: 13px;
-            font-weight: 400;
-        
-        }
-        
+    color: $white;
+}
+
+.footerMenu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 36px;
+    padding-bottom: 28px;
+    &__logo{
+        color: white;
+        font-family: 'Shrikhand', cursive;
+        font-size: 15px;
+        padding-top: 8px;
     }
+    &__texte{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-size: 13px;
+        font-weight: 400;
+    
+    }
+    
 }
 
 #footer__iconeCouvert{
