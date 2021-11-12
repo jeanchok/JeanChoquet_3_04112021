@@ -62,14 +62,14 @@
                     <div class="encart">
                         <div class="encartDiv" id="fonctionnementTexteIcone2"> 
                             <p class="encartDiv__number">2</p>
-                            <i class="fas fa-list-ul"></i>
+                            <i id="encartDiv__iconeList" class="fas fa-list-ul"></i>
                             <h2 class="encartDiv__text">Composez votre menu</h2>
                         </div>
                     </div>
                     <div class="encart">
                         <div class="encartDiv" id="fonctionnementTexteIcone3"> 
                             <p class="encartDiv__number">3</p>
-                            <i class="fas fa-store"></i>
+                            <i id="encartDiv__iconeShop" class="fas fa-store"></i>
                             <h2 class="encartDiv__text">Dégustez au restaurant</h2>
                         </div>
                     </div>
@@ -78,59 +78,72 @@
 
             <section class="section2">
                 <h2 id="section2__title">Restaurants</h2>
-                <a href="#" class="restaurantsEncart" id="restaurantsEncart1">
-                    <div class="restaurantsEncartDiv">
+                <div class="restaurantsEncart" id="restaurantsEncart1">
+                    <a href="#" class="restaurantsEncartDiv">
                         <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" id="img1" class="restaurantsEncartDiv__Image" alt="La palette du goût"/>
                         <p class="restaurantsEncartDiv__nouveau">Nouveau</p>
-                    </div>
+                    </a>
                     <div class="encartTexte">
-                        <div class="encartTexte__div">
+                        <a href="#" class="encartTexte__div">
                             <h2 class="encartTexte__div--nom">La palette du goût</h2>
                             <p class="encartTexte__div--location">Ménilmontant</p>
-                        </div>
-                        <i id="encartTexte__coeur1" class="far fa-heart"></i>   
+                        </a>
+                        <button id="btn_like1">
+                            <i id="encartTexte__coeur1--checked" class="fa fa-heart" aria-hidden="true"></i>
+                            <i id="encartTexte__coeur1" class="far fa-heart"></i>
+                        </button>
                     </div>                    
-                </a>
+                </div>
 
-                <a href="#" class="restaurantsEncart" id="restaurantsEncart2">
-                    <div class="restaurantsEncartDiv">
+                <div class="restaurantsEncart" id="restaurantsEncart2">
+                    <a href="#" class="restaurantsEncartDiv">
                         <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" id="img2" class="restaurantsEncartDiv__Image" alt="La note enchantée"/>
                         <p class="restaurantsEncartDiv__nouveau">Nouveau</p>
-                    </div>
+                    </a>
                     <div class="encartTexte">
-                        <div class="encartTexte__div">
+                        <a href="#"class="encartTexte__div">
                             <h2 class="encartTexte__div--nom">La note enchantée</h2>
                             <p class="encartTexte__div--location">Charonne</p>
-                        </div>
-                    <i id="coeur2" class="far fa-heart"></i>   
+                        </a>
+                        <button id="btn_like2">
+                            <i id="encartTexte__coeur2--checked" class="fa fa-heart" aria-hidden="true"></i>
+                            <i id="encartTexte__coeur2" class="far fa-heart"></i>
+                        </button>  
                     </div>                    
-                </a>
+                </div>
 
-                <a href="D:\OpenClassrooms\Projet 3\JeanChoquet_3_28102021\menu1.html" class="restaurantsEncart">
-                    <div class="restaurantsEncartDiv">
+                <div class="restaurantsEncart">
+                    <a href="#" class="restaurantsEncartDiv">
                         <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" id="img3" class="restaurantsEncartDiv__Image" alt="À la française"/>
-                    </div>
+                    </a>
                     <div class="encartTexte">
-                        <div class="encartTexte__div">
+                        <a href="#" class="encartTexte__div">
                             <h2 class="encartTexte__div--nom">À la française</h2>
                             <p class="encartTexte__div--location">Cité Rouge</p>
-                        </div>
-                    <i id="coeur3" class="far fa-heart"></i>   
+                        </a>
+                        <button id="btn_like3">
+                            <i id="encartTexte__coeur3--checked" class="fa fa-heart" aria-hidden="true"></i>
+                            <i id="encartTexte__coeur3" class="far fa-heart"></i>
+                        </button>   
                     </div>                    
-                </a>
+                </div>
 
-                <a href="#" class="restaurantsEncart">
-                    <div class="restaurantsEncartDiv">
+                <div class="restaurantsEncart">
+                    <a href="#" class="restaurantsEncartDiv">
                         <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" id="img4" class="restaurantsEncartDiv__Image" alt="Le délice des sens"/>
-                    </div>
+                    </a>
                     <div class="encartTexte">
-                        <div class="encartTexte__div">
+                        <a href="#" class="encartTexte__div">
                             <h2 class="encartTexte__div--nom">Le délice des sens</h2>
                             <p class="encartTexte__div--location">Folie-Méricourt</p>
-                        </div>
-                    <i id="coeur4" class="far fa-heart"></i>   
+                        </a>
+                        <button id="btn_like4">
+                            <i id="encartTexte__coeur4--checked" class="fa fa-heart" aria-hidden="true"></i>
+                            <i id="encartTexte__coeur4" class="far fa-heart"></i>
+                        </button>
+
                     </div>                    
-                </a>
+                </div>
             </section>
         </main>
 

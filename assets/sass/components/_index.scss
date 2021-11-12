@@ -1,23 +1,30 @@
 .bouton{
     margin:auto;
     display: flex;
-    margin-top: 48px;
+    margin-top: 30px;
     margin-bottom: 68px;
         &__texte{
-            width: 60%;
-            margin: auto;
-            align-content: center;
-            border: 2px solid #F2F2F2;
-            border-radius: 32px;
-            margin-bottom: 16px;
-            height: 52px;
-            cursor: pointer;
-            color:white;
-            background: linear-gradient(to top left, $purple, $pink);
+          font-size: 15px;
+          width: 100%;
+          margin: auto;
+          margin-right: 58px;
+          margin-left: 58px;
+          align-content: center;
+          border: none;
+          -webkit-box-shadow: 0px 6px 14px -6px #0000008c; 
+          box-shadow: 0px 6px 14px -6px #0000008c;
+          border-radius: 32px;
+          margin-bottom: 16px;
+          height: 52px;
+          cursor: pointer;
+          color:white;
+          background: linear-gradient(to top left, $purple, $pink);
             
         }
     &:hover &__texte{
         background: linear-gradient(to top left, lighten($purple, 10%), lighten($pink, 10%));
+        -webkit-box-shadow: 0px 6px 14px -6px #000000e3; 
+        box-shadow: 0px 6px 14px -6px #000000e3;
     }
         
 }
