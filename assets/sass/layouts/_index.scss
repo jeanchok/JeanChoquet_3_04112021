@@ -16,12 +16,12 @@
 }
 
 .headingSection{
-    position:relative;
     &__image{
         object-fit: cover;
         box-shadow:  0px 15px 10px -15px #0000002e;
         position: relative;
         width: 100%;
+        max-height: 512px;
     }
     &__title{
         display: flex;
@@ -30,13 +30,8 @@
         width: 100%;
         background-color: $white;
         border-radius: 40px 40px 0 0;
-        bottom: 0;
-        #title__coeur{
-            font-size: 23px;
-            align-content: center;
-            margin: auto;
-            margin-right: 24px;
-        }
+        margin-top: -64px;
+        max-width: 1440px;
     }
 
 }
@@ -45,10 +40,23 @@
     margin-left: 14px;
 }
 
+.flexSection__desktop{
+    @include desktop{
+        display: flex;
+        margin-top: 24px;
+    }
+}
+
 .menuSection{
     margin-left: 12px;
     margin-right: 12px;
     &__titre{
+        -webkit-animation: appearDelayed;
+        animation-name: appearDelayed;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
         &:after{
             content: "";
             display: block;
@@ -56,6 +64,9 @@
             width: 41px;
             background-color:#99E2D0;
         }
+    }
+    @include desktop {
+        width: 33%;
     } 
 }
 
@@ -68,14 +79,20 @@
     }
 }
 
-#appear-1,#appear-8,#appear-12{
+@for $i from 0 to 4 {
+    #titre-#{$i} {
+      animation-delay: #{$i/2}s;
+    }
+}
+
+/*#appear-1,#appear-8,#appear-12{
     -webkit-animation: appearDelayed;
     animation-name: appearDelayed;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-}
+}*/
 
 @keyframes slideInFromTop {
     0%{
@@ -156,8 +173,13 @@
         background: #99E2D0;
         transition: 0.5s;
         pointer-events: none;
-        /*border-radius: 0px 16px 16px 0px;*/
         box-sizing: border-box;
+        @include tablette-only {
+            right: -20%;
+        }
+        @include desktop {
+            right: -25%;
+        }
     }
 
     &:hover:before{
@@ -201,8 +223,11 @@
     flex-direction: column;
     margin-left: 36px;
     padding-bottom: 28px;
+    @include desktop {
+        align-items: center;
+    }
     &__logo{
-        color: white;
+        color: $white;
         font-family: 'Shrikhand', cursive;
         font-size: 15px;
         padding-top: 8px;
@@ -212,7 +237,9 @@
         margin-bottom: 4px;
         font-size: 13px;
         font-weight: 400;
-    
+    }
+    & a{
+        color: $white;
     }
     
 }

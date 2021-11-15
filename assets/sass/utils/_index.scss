@@ -9,3 +9,22 @@ $greylight:rgb(236, 236, 236);
 $grey: rgb(56, 56, 56);
 $greylight2: rgb(133, 133, 133);
 $gradient: linear-gradient(#FF79DA, #9356DC);
+
+$breakpoints: (
+    mobile: 768px,
+    tablette: 992px
+);
+
+/*Media Queries - Tablette*/
+@mixin tablette-only {
+    @media all and (min-width: map-get($breakpoints,mobile)) and (max-width: map-get($breakpoints, tablette)){
+        @content;
+    }
+}
+
+/*Media Queries - Desktop*/
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints,tablette)){
+        @content;
+    }
+}

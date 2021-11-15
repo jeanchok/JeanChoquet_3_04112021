@@ -8,6 +8,11 @@ html{
     font-family:'Roboto', sans-serif;
 }
 
+body{
+    margin: auto;
+    overflow-x: hidden;
+}
+
 h1{
     font-family: 'Shrikhand', cursive;
     font-size: 28px;
@@ -21,13 +26,25 @@ header{
     margin: auto;
 }
 
-body{
+
+main{
+    width: 100%;
+}
+
+.bodyContent{
     max-width: 767px;
     margin: auto;
     overflow-x: hidden;
+    @include tablette-only {
+        max-width: 992px;
+    }
+    @include desktop {
+        max-width: 1440px;
+    }
 }
 
 a{
     text-decoration: none;
     color: $black;
+    cursor: pointer;
 }
