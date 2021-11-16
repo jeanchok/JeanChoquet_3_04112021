@@ -210,10 +210,10 @@
     &__div{
         flex: 1;
         &--nom{
-            margin: 8px 0 6px 12px;
+            margin: 8px 0 0 12px;
         }
         &--location{
-            margin: 8px 0 6px 12px;
+            margin: 4px 0 8px 12px;
         }
     }
 }
@@ -285,11 +285,11 @@
     margin-right: 24px;
 }
 
-#btn_like1:focus #encartTexte__coeur1--checked, #btn_like2:focus #encartTexte__coeur2--checked,#btn_like3:focus #encartTexte__coeur3--checked,#btn_like4:focus #encartTexte__coeur4--checked,#btn_like5:focus #encartTexte__coeur5--checked{
+#btn_like1:hover #encartTexte__coeur1--checked, #btn_like2:hover #encartTexte__coeur2--checked,#btn_like3:hover #encartTexte__coeur3--checked,#btn_like4:hover #encartTexte__coeur4--checked,#btn_like5:hover #encartTexte__coeur5--checked{
     display: block;
 }
 
-#btn_like1:focus #encartTexte__coeur1, #btn_like2:focus #encartTexte__coeur2,#btn_like3:focus #encartTexte__coeur3,#btn_like4:focus #encartTexte__coeur4,#btn_like5:focus #encartTexte__coeur5{
+#btn_like1:hover #encartTexte__coeur1, #btn_like2:hover #encartTexte__coeur2,#btn_like3:hover #encartTexte__coeur3,#btn_like4:hover #encartTexte__coeur4,#btn_like5:hover #encartTexte__coeur5{
     display: none;
 }
 

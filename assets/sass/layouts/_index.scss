@@ -62,12 +62,16 @@
         animation-duration: 2s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 40px;
         &:after{
             content: "";
             display: block;
-            height: 2px;
+            height: 4px;
             width: 41px;
             background-color:#99E2D0;
+            margin-top: 4px;
         }
     }
     @include desktop {
@@ -124,7 +128,7 @@
     flex-direction: column;
     align-content: center;
     border: 2px solid transparent;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.18), -2px 2px 3px rgba(0, 0, 0, 0.18);
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.18), -2px 2px 3px rgba(0, 0, 0, 0.18);
     border-radius: 16px;
     margin-bottom: 16px;
     position: relative;
@@ -132,6 +136,7 @@
     border: transparent;
     &__nom{
         display: flex;
+        margin-top: 2px;
         &--texte{
             margin-left: 12px;
             margin-top: 10px;
@@ -150,7 +155,7 @@
     &__texte{
         display: flex;
         margin-top: -10px;
-        margin-bottom: -3px;
+        margin-bottom: -6px;
         margin-left: 12px;
         overflow: hidden;
         white-space: nowrap;
@@ -163,11 +168,15 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         width: 100%;
+        font-size: 16px;
     }
     &__prix{
             margin-right: 22px;
             transition: 0.5s;
             margin-left:8px;
+            font-weight: 800;
+            margin-top: 16px;
+            
     }
     &:before{
         content: '';
@@ -175,7 +184,7 @@
         top: 0;
         right: -35%;
         width: 4rem;
-        height: 150%;
+        height: 100%;
         background: #99E2D0;
         transition: 0.5s;
         pointer-events: none;
@@ -185,7 +194,7 @@
             right: -20%;
         }
         @include desktop {
-            right: -25%;
+            right: -18%;
         }
     }
 
@@ -201,10 +210,11 @@
 .fa-check-circle{
     position: relative;
     align-items: center;
-    right: -100%;
+    right: -50%;
     transition: 0.5s;
     color: $white;
     font-size: 22px;
+    margin-top: 2px;
 }
 
 .plat:hover .fa-check-circle{

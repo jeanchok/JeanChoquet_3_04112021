@@ -1,8 +1,3 @@
-/** Up to 767px **/
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
-
 html{
     overflow-x: hidden;
     font-family:'Roboto', sans-serif;
@@ -19,7 +14,12 @@ h1{
 }
 
 h2{
-    font-size: 16px;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+p{
+    font-size: 18px;
 }
 
 header{
