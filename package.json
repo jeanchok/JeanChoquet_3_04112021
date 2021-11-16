@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "sass": "sass --watch .:.",
-      "sassProd": "sass ./sass/main.scss:./css/style.css --style compressed",
-      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/"
+      "sass": "sass --watch .:. -w --style compressed",
+      "prefix": "postcss . --use autoprefixer -d ./css/"
     },
   "repository": {
     "type": "git",
@@ -14,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/jeanchok/JeanChoquet_3_04112021/issues"
   },
