@@ -1,3 +1,4 @@
+/*header HomePage*/
 .header{
     display: flex;
     margin: auto;
@@ -36,8 +37,12 @@
 
 }
 
+/*Page Menu Composants*/
 .title__restaurant{
     margin-left: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .flexSection__desktop{
@@ -70,6 +75,7 @@
     } 
 }
 
+/*Animation Plats & Plats*/
 @keyframes appearDelayed {
     0%{
         opacity: 0;
@@ -84,15 +90,6 @@
       animation-delay: #{$i/2}s;
     }
 }
-
-/*#appear-1,#appear-8,#appear-12{
-    -webkit-animation: appearDelayed;
-    animation-name: appearDelayed;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}*/
 
 @keyframes slideInFromTop {
     0%{
@@ -134,13 +131,21 @@
     overflow: hidden;
     border: transparent;
     &__nom{
-        margin-left: 12px;
-        margin-top: 10px;
-        margin-bottom: 0;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 100%;
+        display: flex;
+        &--texte{
+            margin-left: 12px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+            margin-right: 12px;
+        }
+    }
+    &__whiteSpace{
+        display: block;
+        transition: 0.5s;
     }
     &__texte{
         display: flex;
@@ -148,20 +153,21 @@
         margin-bottom: -3px;
         margin-left: 12px;
         overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
     }
     &__ingredients{
-            flex: 1;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            width: 100%;
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
     }
     &__prix{
             margin-right: 22px;
             transition: 0.5s;
+            margin-left:8px;
     }
     &:before{
         content: '';
@@ -174,6 +180,7 @@
         transition: 0.5s;
         pointer-events: none;
         box-sizing: border-box;
+        visibility: hidden;
         @include tablette-only {
             right: -20%;
         }
@@ -184,8 +191,9 @@
 
     &:hover:before{
         right:0;
+        visibility: visible;
     }
-    &:hover .plat__prix{
+    &:hover .plat__prix, &:hover .plat__whiteSpace{
         margin-right: 4rem;
     }
 }
@@ -211,6 +219,7 @@
     }
 }
 
+/*Footer*/
 .footer{
     width: 100%;
     background-color: $grey;

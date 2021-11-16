@@ -60,7 +60,7 @@
     margin-left: 24px;
     margin-right: 24px;
 }
-
+/* Fonctionnement*/
 .section1{
     padding-bottom: 72px;
     margin: auto;
@@ -149,6 +149,19 @@
     position: relative;
 }
 
+/* Restaurants Home Page*/
+.section2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    &__flexdiv{
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
 .restaurantsEncart{
     border: solid #f2f2f2d3 1px;
     border-radius: 16px;
@@ -160,18 +173,6 @@
     margin-bottom: 24px;
     @include desktop{
         width: 49%;
-    }
-}
-
-.section2{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 40px;
-    &__flexdiv{
-        @include desktop{
-            display: flex;
-            justify-content: space-between;
-        }
     }
 }
 
@@ -223,6 +224,8 @@
     margin: auto;
     margin-right: 20px;
 }
+
+/*Animation Like*/
 
 @keyframes fadein {
     from { opacity: 0; }

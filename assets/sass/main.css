@@ -1,5 +1,8 @@
+/*Couleurs*/
+/*Media Queries*/
 /*Media Queries - Tablette*/
 /*Media Queries - Desktop*/
+/*boutton*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 .bouton {
@@ -38,22 +41,13 @@
     width: 30%;
   }
 }
-.bouton:hover .bouton__texte {
+.bouton__texte:hover {
   background: linear-gradient(to top left, #ae80e5, #fface8);
   -webkit-box-shadow: 0px 6px 14px -6px #000000e3;
   box-shadow: 0px 6px 14px -6px #000000e3;
 }
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .bouton {
-    display: block;
-  }
-}
-@media screen and (min-width: 992px) {
-  .bouton {
-    display: block;
-  }
-}
 
+/*Header Page Menu*/
 .header__btn {
   border: transparent;
   background-color: transparent;
@@ -126,6 +120,7 @@
   animation-delay: 0.5s;
 }
 
+/*header HomePage*/
 .header {
   display: flex;
   margin: auto;
@@ -161,8 +156,12 @@
   max-width: 1440px;
 }
 
+/*Page Menu Composants*/
 .title__restaurant {
   margin-left: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media screen and (min-width: 992px) {
@@ -197,6 +196,7 @@
   }
 }
 
+/*Animation Plats & Plats*/
 @keyframes appearDelayed {
   0% {
     opacity: 0;
@@ -221,14 +221,6 @@
   animation-delay: 1.5s;
 }
 
-/*#appear-1,#appear-8,#appear-12{
-    -webkit-animation: appearDelayed;
-    animation-name: appearDelayed;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}*/
 @keyframes slideInFromTop {
   0% {
     opacity: 0;
@@ -314,6 +306,9 @@
   border: transparent;
 }
 .plat__nom {
+  display: flex;
+}
+.plat__nom--texte {
   margin-left: 12px;
   margin-top: 10px;
   margin-bottom: 0;
@@ -321,6 +316,11 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   width: 100%;
+  margin-right: 12px;
+}
+.plat__whiteSpace {
+  display: block;
+  transition: 0.5s;
 }
 .plat__texte {
   display: flex;
@@ -342,6 +342,7 @@
 .plat__prix {
   margin-right: 22px;
   transition: 0.5s;
+  margin-left: 8px;
 }
 .plat:before {
   content: "";
@@ -354,6 +355,7 @@
   transition: 0.5s;
   pointer-events: none;
   box-sizing: border-box;
+  visibility: hidden;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .plat:before {
@@ -367,8 +369,9 @@
 }
 .plat:hover:before {
   right: 0;
+  visibility: visible;
 }
-.plat:hover .plat__prix {
+.plat:hover .plat__prix, .plat:hover .plat__whiteSpace {
   margin-right: 4rem;
 }
 
@@ -392,6 +395,7 @@
     -webkit-transform: rotate(360deg);
   }
 }
+/*Footer*/
 .footer {
   width: 100%;
   background-color: #383838;
@@ -545,6 +549,7 @@ a {
   margin-right: 24px;
 }
 
+/* Fonctionnement*/
 .section1 {
   padding-bottom: 72px;
   margin: auto;
@@ -637,6 +642,19 @@ a {
   position: relative;
 }
 
+/* Restaurants Home Page*/
+.section2 {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 992px) {
+  .section2__flexdiv {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .restaurantsEncart {
   border: solid #f2f2f2d3 1px;
   border-radius: 16px;
@@ -650,18 +668,6 @@ a {
 @media screen and (min-width: 992px) {
   .restaurantsEncart {
     width: 49%;
-  }
-}
-
-.section2 {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-}
-@media screen and (min-width: 992px) {
-  .section2__flexdiv {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -714,6 +720,7 @@ a {
   margin-right: 20px;
 }
 
+/*Animation Like*/
 @keyframes fadein {
   from {
     opacity: 0;
