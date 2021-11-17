@@ -134,6 +134,8 @@
         margin-left: 28px;
         overflow: hidden;
         text-overflow: ellipsis;
+        font-size: 18px;
+        font-weight: 600;
     }
 }
 
@@ -282,7 +284,7 @@
     font-size: 23px;
     align-content: center;
     margin: auto;
-    margin-right: 24px;
+    margin-right: 6px;
 }
 
 #btn_like1:hover #encartTexte__coeur1--checked, #btn_like2:hover #encartTexte__coeur2--checked,#btn_like3:hover #encartTexte__coeur3--checked,#btn_like4:hover #encartTexte__coeur4--checked,#btn_like5:hover #encartTexte__coeur5--checked{
