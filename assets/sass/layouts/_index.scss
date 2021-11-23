@@ -183,7 +183,7 @@
         position: absolute;
         top: 0;
         right: -35%;
-        width: 4rem;
+        width: 64px;
         height: 100%;
         background: #99E2D0;
         transition: 0.5s;
@@ -203,7 +203,7 @@
         visibility: visible;
     }
     &:hover .plat__prix, &:hover .plat__whiteSpace{
-        margin-right: 4rem;
+        margin-right: 64px;
     }
 }
 
